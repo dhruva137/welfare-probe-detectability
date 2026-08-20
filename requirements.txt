@@ -1,0 +1,18 @@
+# Class A (CPU-only, experiments/*.py) -- pinned to what this repo was built and run against.
+numpy==2.4.4
+pandas==2.2.3
+scipy==1.15.2
+scikit-learn==1.6.1
+matplotlib==3.10.1
+nbformat==5.10.4
+
+# Class B (Kaggle T4 / API, notebooks/detectability_audit_t4.ipynb) -- installed inside the
+# notebook itself via a pinned `%pip install -q` cell, not required to run anything in
+# experiments/. Listed here too so the full dependency surface of the repo is visible in one
+# place.
+torch
+transformers==4.44.2
+accelerate==0.33.0
+bitsandbytes==0.43.3
+datasets==2.20.0
+anthropic==0.34.2
